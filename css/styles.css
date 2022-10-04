@@ -1,0 +1,229 @@
+h1{
+    color: rgb(0, 180, 216);
+}
+
+.color-primario {
+    color:rgb(0, 150, 199)
+}
+
+h3 {
+    color:rgb(0, 180, 216);
+    font-family:Cambria, Cochin, Georgia, Times, 'Times New Roman', serif ;
+}
+
+h2{
+    text-align: center;
+    text-decoration: underline;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+}
+
+a{text-decoration: none;}
+
+.portada{
+    height: 100vh;
+    background-image:url(../assets/img/coaching.jpg) ;
+    background-size: 1400px 1000px;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-attachment: fixed;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+ul li {
+    display: inline-block;   
+}
+
+header {
+    background-color: rgb(202, 240, 248);
+    color:rgb(0, 150, 199);
+    padding: 15px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+header nav {
+    width: 50%;
+}
+
+header ul {
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+}
+
+a{
+    text-decoration: none;
+}
+
+.portada_texto {
+    text-align: center;
+    font-size: 2rem;
+    padding: 15px;
+    border-radius: 20px;
+    background-color: rgb(202, 240, 248, 0.674);
+    color: rgb(0, 119, 182) ;
+}
+
+.servicios_title{
+    background-color:rgb(202, 240, 248);
+    padding: 18px;
+    text-align: center;
+    font-size: 2rem;
+
+}
+
+.productos__title{
+    background-color: rgb(202, 240, 248);
+    padding: 18px;
+    text-align: center;
+    font-size: 2rem;
+}
+
+.tarjeta{
+    border:2px solid rgb(0, 180, 216);
+    width: 250px;
+    height:390px ;
+    border-radius: 20px;
+    padding: 20px;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.tarjeta__img{
+    width: 250px;
+    border-radius: 20px;
+}
+
+.btn{
+    border: 2px solid rgb(0, 180, 216);
+    background-color: rgb(202, 240, 248);
+    color: rgb(0, 119, 182);
+    border-radius: 20px;
+    padding: 10px 15px;
+}
+
+.btn:hover{
+    border:2px solid rgb(0, 180, 216);
+    background-color: rgb(0, 119, 182);
+    color: white ;
+}
+
+.slider{
+    padding: 15px;
+    display: flex;
+    overflow: auto;
+    gap: 15px;
+}
+
+.caja {
+    background-color: rgb(0, 180, 216);
+    border: 2px solid rgb(0, 119, 182);
+    font-size: 2rem;
+}
+
+.contenedor {
+    background:rgb(0, 119, 182);
+    border: black solid 2px;
+
+    height: 98vh;
+    display: grid;
+    grid-template-columns: 25% 25% 25% 25%;
+    gap: 20px;
+}
+
+.contenedor-grid{
+    display: grid;
+    grid-template-columns: 20vw 1fr 15vw;
+    grid-template-rows: 10vh 45vh 45vh 15vh;
+}
+
+.mobile{
+    width: auto;
+    height: auto;
+    background-color: rgb(202, 240, 248);
+}
+
+@media (min-width:576px) and (max-width:768px){
+    .mobile {
+        background-color: rgb(202, 240, 248);
+    }
+}
+
+.header{
+    background-color: rgb(202, 240, 248);
+    padding: 15px ;
+}
+
+.header__tittle{
+   text-align: center; 
+}
+
+.ubicacion__titulo{
+    text-align: center;
+    background-color: rgb(202, 240, 248);
+    padding: 15px;
+}
+
+.ubicacion__mapa{
+    width: 100%;
+}
+
+.contenedor{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 15%;
+    height: 25vh;
+    width: 25vh;
+
+    transform: translate(120px);
+}
+
+
+.caja{
+    width: 150px;
+    height: 150px;
+    border: solid rgb(202, 240, 248) 3px;
+    border-radius: 15%;
+    text-align: center;
+    font-size: 2rem;
+    background: linear-gradient(rgb(202, 240, 248), rgb(0, 119, 182));
+
+    transform: translate(1px);
+    transition-duration: 2s;
+
+    animation-name: mover-caja;
+    animation-duration: 3s;
+    animation-iteration-count:2 ;
+}
+
+.caja:hover{
+    transform: rotate(45deg);
+}
+
+@keyframes mover-caja{
+    0% {
+        transform: translate(0,0);
+        background-color: blue;
+    }
+
+    25%{
+        transform: translate(300px);
+        background-color: blue; 
+    }
+
+    50%{
+        transform: translate(300px, 300px);  
+    }
+
+    75%{
+        transform: translate(0px, 300px);   
+    }
+} 
